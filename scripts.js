@@ -32,6 +32,40 @@ for (let i = 0; i < seleccionArticlesSections.length; i++) {
   seleccionArticlesSections[i].style.backgroundColor = "red";
 }
 
+//Ejercicio 3 - Cuando el cursor esté sobre alguno de los siguientes elementos, seguir las instrucciones siguientes, y devolver dicho elemento a su estado original cuando salga el cursor.
+
+//Ejercicio 3.1 - Imágenes: Cambia la imagen por el gif abracadabra.gif.
+
+for (let i = 0; i < allImages.length; i++) {
+  const imageDefault = allImages[i].src;
+
+  allImages[i].addEventListener("mouseover", () => {
+    allImages[i].src = "./assets/abracadabra.gif";
+  });
+  {
+    allImages[i].addEventListener("mouseout", () => {
+      allImages[i].src = imageDefault;
+    });
+  }
+}
+
+//Ejercicio 3.2 - Párrafos: Cambia el color del texto y el de fondo por uno cualquiera.
+
+for (let i = 0; i < seleccionarParrafos.length; i++) {
+  seleccionarParrafos[i].addEventListener("mouseover", () => {
+    seleccionarParrafos[i].style.color = "blue";
+  });
+  {
+    seleccionarParrafos[i].addEventListener("mouseout", () => {
+      seleccionarParrafos[i].style.color = "purple";
+    });
+  }
+}
+
+// allImages[i].addEventListener("click", function () {
+//   allImages[i].src = "./assets/magic-1.gif";
+// });
+
 // function cambiarImagen() {
 //   for (let i = 0; i < allImages.length; i++)
 //     allImages[i].src = "assets/magic-1.gif";
