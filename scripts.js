@@ -1,8 +1,77 @@
+//Ejercicio 1
+
 const allLinks = document.querySelectorAll("a");
 
 for (let i = 0; i < allLinks.length; i++) {
   allLinks[i].href = "";
 }
+
+//Ejercicio 2.1
+
+// const allImages =
+
+// function changeImage() {
+const allImages = document.querySelectorAll("img");
+
+for (let i = 0; i < allImages.length; i++)
+  allImages[i].addEventListener("click", function () {
+    allImages[i].src = "./assets/magic-1.gif";
+  });
+
+//2.2 Párrafos: Cambia el color del texto y el de fondo por uno cualquiera.
+
+const colorParrafos = document.querySelectorAll("p");
+for (let i = 0; i < colorParrafos.length; i++) {
+  colorParrafos[i].style.color = "white";
+}
+
+const colorFondo = document.querySelector("body");
+colorFondo.style.backgroundColor = "Red";
+
+//2.3
+
+const changeArticlesBgColor = document.querySelectorAll("article");
+changeArticlesBgColor.style.backgroundColor = "White";
+
+// function cambiarImagen() {
+//   for (let i = 0; i < allImages.length; i++)
+//     allImages[i].src = "assets/magic-1.gif";
+// }
+
+// allImages.addEventListener("click", function () {
+//   allImages.src = "assets/magic-1.gif";
+// });
+
+// allImages.addEventListener("click", function () {
+//   for (let i = 0; i < allImages.length; i++)
+//     allImages[i].src = "assets/magic-1.gif";
+// });
+
+// allImages.addEventListener("click", function () {
+//   for (let i = 0; i < allImages.length; i++)
+//     allImages[i].src = "assets/magic-1.gif";
+// });
+
+// for (let i = 0; i < allImages.length; i++) {
+//   allImages[i].src = "assets/magic-1.gif";
+
+//   .addEventListener("click", function () {
+//     return (allImages.src = "hello.png");
+//   });
+
+// const allImages = document
+//   .querySelectorAll("img")
+//   .addEventListener("click", function () {
+//     allImages.src = "";
+//   });
+
+// const allImages = document
+//   .querySelectorAll("a")
+//   .addEventListener("click", function () {
+//     allImages.src === "../magic-1.gif";
+//   });
+
+//   ("click", function () {});
 
 // const clickDisabled = document.getElementsByTagName("a").onclick = function() {
 //     clickDisabled.removeAttribute("onclick");
