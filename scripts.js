@@ -75,101 +75,11 @@ for (let i = 0; i < seleccionArticlesSections.length; i++) {
   }
 }
 
-// allImages[i].addEventListener("click", function () {
-//   allImages[i].src = "./assets/magic-1.gif";
-// });
+//Ejercicio 4 - Crea una función de nombre getRandom que acepte un array con valores y devuelva uno de ellos de manera aleatoria.
 
-// function cambiarImagen() {
-//   for (let i = 0; i < allImages.length; i++)
-//     allImages[i].src = "assets/magic-1.gif";
-// }
-
-// allImages.addEventListener("click", function () {
-//   allImages.src = "assets/magic-1.gif";
-// });
-
-// allImages.addEventListener("click", function () {
-//   for (let i = 0; i < allImages.length; i++)
-//     allImages[i].src = "assets/magic-1.gif";
-// });
-
-// allImages.addEventListener("click", function () {
-//   for (let i = 0; i < allImages.length; i++)
-//     allImages[i].src = "assets/magic-1.gif";
-// });
-
-// for (let i = 0; i < allImages.length; i++) {
-//   allImages[i].src = "assets/magic-1.gif";
-
-//   .addEventListener("click", function () {
-//     return (allImages.src = "hello.png");
-//   });
-
-// const allImages = document
-//   .querySelectorAll("img")
-//   .addEventListener("click", function () {
-//     allImages.src = "";
-//   });
-
-// const allImages = document
-//   .querySelectorAll("a")
-//   .addEventListener("click", function () {
-//     allImages.src === "../magic-1.gif";
-//   });
-
-//   ("click", function () {});
-
-// const clickDisabled = document.getElementsByTagName("a").onclick = function() {
-//     clickDisabled.removeAttribute("onclick");
-// }
-
-// const clickDisabled = document.getElementsByTagName("a");
-
-// document.getElementsByTagName("a").addEventListener ("click", function () {
-//     a.removeAttribute("onclick");
-// }
-
-// const clickDisabled = document
-//   .getElementsByTagName("a")
-//   .addEventListener("click", function () {
-//     clickDisabled.disable = true;
-//   });
-
-// const clickDisabled = document
-//   .getElementsByTagName("a")
-//   .setAttribute("disabled", true);
-
-// const allLinks = document.getElementById("span");
-// allLinks.disabled = true;
-
-// function disableClick() {
-//     var input = document.getElementById('textInput').value;
-//     var button = document.getElementById('submitButton');
-//     button.disabled = input === '';
-//   }
-
-// allLinks.disabled = true;
-
-// document.getElementsByTagName("a").disabled = "disabled";
-
-//clickDisabled.disabled = true;
-
-// const linkDisabled = document.getElementsByTagName("a");
-// function clickDisabled() {
-//   linkDisabled.removeAttribute("onclick");
-// }
-
-// for (let i = 0; i < clickDisabled.length; i++) {
-//     clickDisabled.removeAttribute("onclick");
-// }
-
-// const clickDisabled = document.getElementsByTagName("link").onclick = function() {
-//     clickDisabled.removeAttribute("onclick");
-// }
-
-// for(var i=0; i<clickDisabled.length; i++){
-//     clickDisabled[i].addEventListener("click", clickFunction);
-//   }
-
-// document.getElementById("btn").onclick = function(){
-//     document.getElementById("chip-filterTags").ej2_instances[0].removeEventListener("click"); }
+const colors = ["red", "blue", "green"];
+const getRandom = function (array) {
+  return array[Math.floor(Math.random() * array.length)];
+};
+console.log(getRandom(colors));
+// imprime 'red', 'blue' o 'green'
