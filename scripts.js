@@ -1,16 +1,13 @@
-//Ejercicio 1
-
+//Ejercicio 1 - Evita el comportamiento por defecto al hacer click. Por ejemplo, si hago click sobre un enlace, este no me llevará a otra página.
 const allLinks = document.querySelectorAll("a");
 
 for (let i = 0; i < allLinks.length; i++) {
   allLinks[i].href = "";
 }
 
-//Ejercicio 2.1
+//Ejercicio 2 - Al hacer click sobre un elemento van a ocurrir varias cosas. Todo depende del tipo de elemento:
 
-// const allImages =
-
-// function changeImage() {
+//Ejercicio 2.1 - Imágenes: Cambia la imagen por uno de los gif que tienes en la carpeta assets con el nombre magic-*.
 const allImages = document.querySelectorAll("img");
 
 for (let i = 0; i < allImages.length; i++)
@@ -20,18 +17,20 @@ for (let i = 0; i < allImages.length; i++)
 
 //2.2 Párrafos: Cambia el color del texto y el de fondo por uno cualquiera.
 
-const colorParrafos = document.querySelectorAll("p");
-for (let i = 0; i < colorParrafos.length; i++) {
-  colorParrafos[i].style.color = "white";
+const seleccionarParrafos = document.querySelectorAll("p");
+
+for (let i = 0; i < seleccionarParrafos.length; i++) {
+  seleccionarParrafos[i].style.color = "yellow";
+  seleccionarParrafos[i].style.backgroundColor = "green";
 }
 
-const colorFondo = document.querySelector("body");
-colorFondo.style.backgroundColor = "Red";
+//Ejercicio 2.3 - Bloques de article o section: Cambia el color de fondo.
 
-//2.3
+const seleccionArticlesSections = document.querySelectorAll("article, section");
 
-const changeArticlesBgColor = document.querySelectorAll("article");
-changeArticlesBgColor.style.backgroundColor = "White";
+for (let i = 0; i < seleccionArticlesSections.length; i++) {
+  seleccionArticlesSections[i].style.backgroundColor = "red";
+}
 
 // function cambiarImagen() {
 //   for (let i = 0; i < allImages.length; i++)
