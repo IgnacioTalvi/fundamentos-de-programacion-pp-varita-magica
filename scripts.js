@@ -62,6 +62,19 @@ for (let i = 0; i < seleccionarParrafos.length; i++) {
   }
 }
 
+//Ejercicio 3.3 - Bloques de article o section: Color de fondo distinto al de párrafo.
+
+for (let i = 0; i < seleccionArticlesSections.length; i++) {
+  seleccionArticlesSections[i].addEventListener("mouseover", () => {
+    seleccionArticlesSections[i].style.backgroundColor = "blue";
+  });
+  {
+    seleccionArticlesSections[i].addEventListener("mouseout", () => {
+      seleccionArticlesSections[i].style.backgroundColor = "black";
+    });
+  }
+}
+
 // allImages[i].addEventListener("click", function () {
 //   allImages[i].src = "./assets/magic-1.gif";
 // });
