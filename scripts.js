@@ -90,3 +90,17 @@ for (let i = 0; i < seleccionarParrafos.length; i++) {
   seleccionarParrafos[i].style.color = getRandom(paletaDeColores);
   seleccionarParrafos[i].style.backgroundColor = getRandom(paletaDeColores);
 }
+
+//Ejercicio 6 - Utiliza la función creada getRandom para utilizar gifs aleatorios en los apartados anteriores.
+
+const randomGifs = [
+  "./assets/magic-1.gif",
+  "./assets/magic-2.gif",
+  "./assets/magic-3.gif",
+  "./assets/magic-4.gif",
+  "./assets/magic-5.gif",
+  "./assets/magic-6.gif",
+];
+for (let i = 0; i < allImages.length; i++) {
+  allImages[i].src = getRandom(randomGifs);
+}
