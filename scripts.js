@@ -82,4 +82,11 @@ const getRandom = function (array) {
   return array[Math.floor(Math.random() * array.length)];
 };
 console.log(getRandom(colors));
-// imprime 'red', 'blue' o 'green'
+
+//Ejercicio 5 - Utiliza la función creada getRandom para utilizar colores aleatorios de una paleta que hayas escogido de coolors.co en los apartados anteriores.
+
+const paletaDeColores = ["#8ecae6", "#023047", "#ffb703", "#fb8500"];
+for (let i = 0; i < seleccionarParrafos.length; i++) {
+  seleccionarParrafos[i].style.color = getRandom(paletaDeColores);
+  seleccionarParrafos[i].style.backgroundColor = getRandom(paletaDeColores);
+}
